@@ -55,6 +55,7 @@
 
         $(function () {
             $('form').submit(function () {
+                sendText('収入')
                 const income = $('input[name="income"]').val();
                 const msg = `${income}`;
                 sendText(msg);
